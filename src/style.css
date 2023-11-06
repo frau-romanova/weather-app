@@ -5,7 +5,7 @@ font-family: 'Titillium Web', sans-serif;;
 }
 
 a {
-    color: purple;
+    color: #885df1;
 }
 
 
@@ -30,7 +30,7 @@ padding: 15px 20px;
 font-size: 16px;
 }
 .search-form-button {
-    background: purple;
+    background: #885df1;
     padding: 15px 30px;
     border: none;
     margin-left: 5px;
@@ -58,7 +58,7 @@ line-height: 48px;
 font-size: 16px;
 color: rgba(39, 33, 66, 0.4);
 line-height: 24px;   
-font-weight: 500px; 
+font-weight: 500; 
 }
 
 .weather-app-details strong {
