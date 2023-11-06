@@ -10,24 +10,27 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="weather-app"></div>
+    <div class="weather-app-data"></div>
 <header>
-    <form>
-        <input type="search"placeholder="Enter the city..." required/>
-        <input type="submit" value="Search"/>
+    <form class="search-form">
+        <input type="search"placeholder="Enter the city..." required class="search-form-input"/>
+        <input type="submit" value="Search" class="search-form-button"/>
     </form>
 </header>
 <main>
+    <div class="weather-app-data">
     <div>
-    <h1> Gevgelija </h1>
-    <p>
+    <h1 class="weather-app-city"> Gevgelija </h1>
+    <p class = "weather-app-details">
         Tuesday 14:28, mostly sunny
         <br/>
-        Humidity: 61%, Wind: 1km/h
+        Humidity: <strong>61%</strong>, Wind: <strong> 1km/h </strong>
     </p>
     </div>
-    <div>
-    ⛅ 22°C
+    <div class="weather-app-temperature-container"> 
+    <div class="weather-app-icon">⛅</div> <div class= "weather-app-temperature"> 22
+         <div class="weather-app-unit">°C</div>
+        </div>
         </div>
     </main>
     <footer> This project was coded by 
