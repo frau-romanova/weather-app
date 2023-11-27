@@ -76,20 +76,21 @@ let forecastHTML = "";
 response.data.daily.forEach(function (day) {
   console.log(day); 
 
-  forecastHTML += `
-    <div class="weather-forecast-day">
-      <div class="weather-forecast-date">${day.date}</div>
-      <div class="weather-forecast-icon">${day.condition.icon}</div>
-      <img scr="${day.condition.icon_url}" class="weather-forecast-icon"/>
-      <div class="weather-forecast-temperatures">
-        <div class="weather-forecast-temperature">
-          <strong>${Math.round(day.temperature.maximum)}°</strong>
-        </div>
-        <div class="weather-forecast-temperature">${Math.round(
-          day.temperature.minimum
-        )}°</div>
+forecastHTML += `
+  <div class="weather-forecast-day">
+    <div class="weather-forecast-date">${day.date}</div>
+    <div class="weather-forecast-icon">
+      <img src="${day.condition.icon}" alt="${day.condition.description}" />
+    </div>
+    <div class="weather-forecast-temperatures">
+      <div class="weather-forecast-temperature">
+        <strong>${Math.round(day.temperature.maximum)}°</strong>
       </div>
-    </div>`;
+      <div class="weather-forecast-temperature">${Math.round(
+        day.temperature.minimum
+      )}°</div>
+    </div>
+  </div>`;
 });
 
 
